@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import Column, Integer, String, Boolean, Date, Text, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from ..db.database import Base
+from src.db.database import Base
 
 
 class Blog(Base):

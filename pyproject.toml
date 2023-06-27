@@ -11,6 +11,8 @@ packages = [{include = "fastapi_blog"}]
 python = "^3.10"
 fastapi = {extras = ["all"], version = "^0.97.0"}
 sqlalchemy = "^2.0.16"
+alembic = "^1.11.1"
+psycopg2-binary = "^2.9.6"
 
 
 [build-system]
