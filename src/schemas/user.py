@@ -3,6 +3,7 @@ import datetime
 from pydantic import BaseModel
 from ..models import user
 
+
 class UserBase(BaseModel):
     username: str
     first_name: str
@@ -11,15 +12,19 @@ class UserBase(BaseModel):
     is_active: bool = True
     is_superuser: bool = False
 
+
 class UserCreate(UserBase):
     """
         User create schema
     """
+    password: str
+
 
 class UserUpdate(UserBase):
     """
         User update schema
     """
+
 
 class UserOut(UserBase):
     """

@@ -6,7 +6,6 @@ from ..models import blog
 class BlogBase(BaseModel):
     title: str
     content: str
-    author_id: int
 
 class BlogCreate(BlogBase):
     """
